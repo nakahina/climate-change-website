@@ -1,0 +1,366 @@
+body{
+	margin:0;
+	padding:0;
+	overflow-x: hidden;
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+header {
+  display: flex;
+  width: 100%;
+  height: 70px;
+  padding: 20px;
+  background-color:black;
+  align-items: center;
+}
+
+
+.menu-item a{
+text-decoration: none;
+color: white;
+}
+
+h1.logo{
+  margin-right: auto; //これがlogoとnavigationの間を作っている
+  padding: 10px;
+  color: white;
+}
+
+.menu-item{
+  list-style: none;
+  display: inline-block;
+  padding: 10px;
+}
+
+.menu-item a:hover {
+  color:gray;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 700px;
+  background: lightgray;
+  display: flex;
+  align-items: center;
+  border-radius: 60px;
+  padding: 5px 10px;
+}
+
+header .search-container {
+  float: right;
+  margin-left: 15px;
+}
+
+header input[type=text] {
+  padding: 6px;
+  font-size: 11px;
+  border: none;
+  background: transparent;
+  outline: none;
+}
+
+header .search-container button {
+  float: right;
+  padding: 6px 10px;
+  background: white;
+  font-size: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+header .search-container button:hover {
+  background: #ccc;
+}
+
+header .icons div {
+  color: white;
+  cursor: pointer;
+  font-size: 25px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+header .icons div:hover {
+  color: gray;
+}
+
+section{
+  padding: 30px;
+}
+
+
+/* home */
+.home{
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: url(img/pexels-kristoffer-brink-jonsson-1647220.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.home .content {
+  max-width: 600px;
+}
+
+.home .content h3{
+  font-size: 60px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.home .content p {
+  font-size: 20px;
+  font-weight: lighter;
+  line-height: 1.8;
+  padding: 10px 0;
+  color: white;
+}
+
+.btn {
+  margin-top: 10px;
+  display: inline-block;
+  padding: 7px 30px;
+  font-size: 17px;
+  color: white;
+  background: black;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+.btn:hover{
+  background: gray;
+}
+
+
+/* subscription */
+.subscription-letter .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscription-letter h4{
+  margin-top: 5px;
+}
+
+.email input{
+  padding: 5px 50px 5px 40px;
+  font-size: 14px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.email button {
+  font-size: 14px;
+  color: white;
+  background-color: black;
+  padding: 5px 5px 5px 5px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.email button:hover{
+  background-color: gray;
+}
+
+/* articles */
+
+.articles h2{
+  text-align: center;
+}
+.article-1{
+  text-align: center;
+  position: relative;
+}
+
+.article-1 .article-1-subtitle{
+  position: absolute;
+  color: white;
+  text-decoration: none;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%,-50%);
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  margin:0;
+  padding:0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+
+.article-1 img{
+  width: 580px;
+  height: 340px;
+  margin: 20px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+
+
+}
+
+.article-1 img:hover{
+  transform: scale(1.05); 
+  -webkit-transform: scale(1.05);
+}
+
+
+.article img{
+  width: 150px;
+  height: 110px;
+  -webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.article img:hover{
+  transform: scale(1.1); 
+  -webkit-transform: scale(1.1);
+}
+
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.article_title a{
+  text-decoration: none;
+  color: black;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.article_title a:hover{
+  text-decoration: underline;
+}
+
+.article_subtitle{
+  text-align: justify;
+  font-size: 11px;
+  width: 400px;
+  line-height: 12px;
+}
+
+.article_more{
+  color: gray;
+  font-size: 12px;
+}
+
+.article_more:hover{
+  text-decoration: none;
+}
+
+.articles .btn{
+  background-color: black;
+  border-radius: 5px;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+  width: 580px;
+  display: flex;
+  justify-content: center;
+}
+
+.articles .btn:hover{
+  background-color: gray;
+}
+
+.loadmore{
+  display: flex;
+  justify-content: center;
+}
+
+/* videos */
+.videos {
+  max-width: 700px;
+  margin: 80px auto;
+}
+
+.videos .content{
+  display: flex;
+  justify-content: space-between;
+}
+
+.videos .content .video-content-1 p{
+  text-align:justify;
+  font-size: 8px;
+  margin-right: 20px;
+  width: 300px;
+}
+
+.videos .content .video-content-2 p{
+  text-align:justify;
+  font-size: 8px;
+  width: 300px;
+}
+
+
+
+/* subscription */
+.subscription {
+  background-color: lightgray;
+  padding-top: 40px;
+  padding-bottom: 90p;
+}
+
+.subscription h3{
+ text-align: center;
+}
+
+.subscription p{
+  text-align: center;
+  font-size: 11px;
+}
+
+.subscription .email{
+  text-align: center;
+  margin-top: 20px;
+
+}
+
+/* footer */
+.footer {
+    padding: 20px;
+    padding-top: 15px;
+    background-color: gray;
+    text-align: center;
+}
+
+.footer .icons a{
+  color: white;
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+.footer .icons a:hover{
+  color: lightgray;
+}
+
+.footer .footerNav a{
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  margin-right: 20px;
+}
+
+.footer .footerNav a:hover{
+  text-decoration: underline;
+}
